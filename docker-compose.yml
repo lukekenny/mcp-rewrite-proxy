@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  ultra:
+    build: .
+    ports:
+      - "9000:9000"
+    depends_on:
+      - firecrawl
+  firecrawl:
+    image: firecrawl-mcp:latest
+    ports:
+      - "8030:8030"

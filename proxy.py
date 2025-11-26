@@ -4,7 +4,7 @@ import socketserver
 import json
 import requests
 
-UPSTREAM="http://firecrawl:8030/mcp"
+UPSTREAM="http://172.16.10.51:8030/mcp"
 
 class Handler(http.server.BaseHTTPRequestHandler):
     def do_POST(self):
